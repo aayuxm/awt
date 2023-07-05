@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Social Media Signup Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Social Media Signup</h2>
+    <form id="signupForm" onsubmit="return validateForm()">
+      <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9]+$" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern="^(?=.*[a-zA-Z0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,10}$" required>
+      </div>
+      <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+      <div class="gender">
+        <label>Gender: </label>
+        <div class="radio-container">
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+        </div>
+        <div class="radio-container">
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+        </div>
+        <div class="radio-container">
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+          </div>
+      </div>
+      <div>
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+          <option value="" disabled selected>Select State</option>
+          <option value="state1">Gujarat</option>
+          <option value="state2">Rajasthan</option>
+          <option value="state3">Madhya Pradesh</option>
+          <!-- Add more states as needed -->
+        </select>
+      </div>
+      <div class="agreement">
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">I agree to the terms and conditions.</label>
+      </div>
+      <div>
+        <button type="submit">Register</button>
+      </div>
+    </form>
+    <div id="errorContainer"></div>
+  </div>
+
+  <script src="singup.js"></script>
+</body>
+
+</html>

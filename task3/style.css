@@ -1,0 +1,80 @@
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  .container div {
+    margin-bottom: 10px;
+  }
+  
+  .container label {
+    display: block;
+    color: #666666;
+    font-weight: bold;
+  }
+  
+  .container input[type="text"],
+  .container input[type="password"],
+  .container input[type="email"],
+  .container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  .container .gender {
+    display: flex;
+    align-items: center;
+    color: #666666;
+  }
+  
+  .container .radio-container {
+    margin-right: 15px;
+  }
+  
+  .container .agreement {
+    display: flex;
+    align-items: center;
+    color: #666666;
+  }
+  
+  .container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .container button:hover {
+    background-color: #45a049;
+  }
+  
+  #errorContainer {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .error {
+    margin: 0;
+  }
+  
